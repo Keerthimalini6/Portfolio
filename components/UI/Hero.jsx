@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Container, Row, Col } from "reactstrap";
 import Image from "next/image";
 import Link from "next/link";
-import profile5 from "../../public/images/profile5.png";
+import profile3 from "../../public/images/profile3.png";
 import classes from "../../styles/hero.module.css";
 import { BsGithub } from 'react-icons/bs'
 import { AiOutlineLinkedin } from 'react-icons/ai'
@@ -62,7 +62,7 @@ const Hero = () => {
                 animate="visible"
               >
                 And I&apos;m a
-                <span>Full Stack Web Developer</span>
+                <span style={{ color: "#01edff" }}> Full Stack Web Developer</span>
 
               </motion.h5>
 
@@ -92,9 +92,8 @@ const Hero = () => {
 
           {/* ========== hero img ============= */}
           <Col lg="6" md="6">
-            <div className={`${classes.hero__img} text-end`}>
-              <Image alt="hero-image" src={profile5} width="230" height="300" />
-
+            <div className={`${classes.hero__img} text-end`} >
+              <Image alt="hero-image" src={profile3} />
             </div>
           </Col>
         </Row>
