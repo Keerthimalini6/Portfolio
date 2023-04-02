@@ -28,9 +28,7 @@ const Skills = () => {
             <div className={`${classes.services__container}`}>
               <div className={`${classes.services__container1}`}>
                 <div className={`${classes.service__item}`}>
-
                   <AiOutlineHtml5 style={{ fontSize: "1.8rem", color: "#01edff", background: "none" }} />
-
                   <h5>HTML</h5>
                 </div>
                 <div className={`${classes.service__item}`}>

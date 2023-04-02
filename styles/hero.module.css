@@ -126,7 +126,13 @@
   margin-top: -8%;
   height: 400px;
 }
-
+.intro {
+  float: left;
+  padding-right: 7px;
+}
+.job__title {
+  color: #01edff;
+}
 @keyframes jump {
   0% {
     transform: translateY(0);

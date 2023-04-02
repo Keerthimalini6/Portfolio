@@ -13,7 +13,6 @@ export default function Home() {
       <About />
       <Skills />
       <Project />
-      <Testimonial />
       <Contact />
     </Fragment>
   );

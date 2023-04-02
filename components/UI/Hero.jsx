@@ -2,16 +2,21 @@ import React, { useEffect, useState } from "react";
 import { Container, Row, Col } from "reactstrap";
 import Image from "next/image";
 import Link from "next/link";
-import profile3 from "../../public/images/profile3.png";
+import profile from "../../public/images/profile.png";
 import classes from "../../styles/hero.module.css";
 import { BsGithub } from 'react-icons/bs'
 import { AiOutlineLinkedin } from 'react-icons/ai'
 import { AiOutlineMail } from "react-icons/ai"
 import { BiPhoneCall } from "react-icons/bi"
 import { motion } from "framer-motion";
+import { useTypewriter, Cursor } from "react-simple-typewriter"
+import Typewriter from "typewriter-effect";
 
 const Hero = () => {
-  const [text, setText] = useState('Full Stack Web Developer');
+  const { text } = useTypewriter({
+    words: ["Full Stack Web Developer"],
+    loop: {},
+  })
 
 
   const headingVariants = {
@@ -61,13 +66,21 @@ const Hero = () => {
                 initial="hidden"
                 animate="visible"
               >
-                And I&apos;m a
-                <span style={{ color: "#01edff" }}> Full Stack Web Developer</span>
-
+                <span className={`${classes.intro}`}>
+                  And I&apos;m a
+                </span>
+                <span className={`${classes.job__title}`}>
+                  <Typewriter
+                    options={{
+                      strings: ["  Full Stack Web Developer"],
+                      autoStart: true,
+                      loop: true,
+                    }}
+                  />
+                </span>
               </motion.h5>
-
               <p className={`${classes.p_text}`}>
-                A Diligent MERN Stack Developer, Developing websites using a variety of tools and
+                A Diligent Full Stack Stack Developer, Developing websites using a variety of tools and
                 technologies, including HTML, CSS, JavaScript, React, Node.js, Express.js, and MongoDB. Eager to
                 embrace opportunities that offer challenge and to build innovative, efficient, and user-
                 friendly web applications that meet the needs of modern businesses.
@@ -93,7 +106,7 @@ const Hero = () => {
           {/* ========== hero img ============= */}
           <Col lg="6" md="6">
             <div className={`${classes.hero__img} text-end`} >
-              <Image alt="hero-image" src={profile3} />
+              <Image alt="hero-image" src={profile} />
             </div>
           </Col>
         </Row>
