@@ -14,12 +14,12 @@ const NAV__LINK = [
     display: "About",
   },
   {
-    path: "#services",
-    display: "Services",
+    path: "#skills",
+    display: "Skills",
   },
   {
-    path: "#portfolio",
-    display: "Portfolio",
+    path: "#project",
+    display: "Project",
   },
   {
     path: "#contact",
@@ -48,7 +48,7 @@ const Footer = () => {
 
           <Col lg="6" className={`${classes.footer__top}`}>
             <div className={`${classes.footer__creator}`}>
-              <h6>Created by Muhib</h6>
+              <h6>Created by <span style={{ color: "#01edff" }}>Keerthi</span> </h6>
             </div>
           </Col>
 
@@ -56,7 +56,7 @@ const Footer = () => {
           <Col lg="12">
             <div className={`${classes.footer__copyright}`}>
               <p>
-                &copy; Copyright {year} - Developed by Muhibur Rahman. All right
+                &copy; Copyright {year} - Developed by Keerthi malini. All right
                 reserved.{" "}
               </p>
             </div>

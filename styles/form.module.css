@@ -3,7 +3,7 @@
   width: 100%;
   border: none;
   outline: none;
-  background: #171f38;
+  background: #323744;
   color: #fff;
   padding: 15px 20px;
   border-radius: 5px;
@@ -12,10 +12,26 @@
 
 .form__group input::placeholder,
 .form__group textarea::placeholder {
-  font-size: 0.8rem;
-  color: #808dad;
+  font-size: 1rem;
+  color: #fff;
 }
 
-.form button {
-  color: #01d293;
+.primary__btn{
+  color:#fff;
+  background-color: #323744;
+  width: 80px;
+  padding: 10px;
+  border-radius: 10%;
+  border: none;
+  box-shadow:  0 0 5px 0 #01edff;
+}
+
+.text__div{
+  width: 300px;
+  justify-content: center;
+  align-items: center;
+  box-shadow:  0 0 5px 0 #01edff;
+  border-radius: 20%;
+  margin-top: 20px;
+  padding: 20px;
 }

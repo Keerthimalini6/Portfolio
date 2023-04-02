@@ -20,11 +20,13 @@
 }
 
 .info__item span i {
-  color: #01d293;
+  color: #01edff;
   font-size: 1.2rem;
-  padding: 5px;
+  padding: 7px;
   border-radius: 5px;
-  background: #01d29338;
+  background: #315658;
+  border: none;
+  box-shadow:  0 0 5px 0 #01edff;
 }
 
 .social__links {
@@ -36,7 +38,32 @@
   font-size: 1.3rem !important;
   cursor: pointer;
 }
+.nav__icon {
+  display: inline-block;
+  width: 100%;
+  height:100%;
+  color: #01edff;
+  font-size: 24px;
+  text-align: center;
+  line-height: 40px;
+  transition: transform 2s ease;
+}
 
+
+.nav__anc{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #01edff;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  color: #01edff;
+}
+.nav__anc:hover {
+  transform: translateY(-10px);
+}
 @media only screen and (max-width: 768px) {
   .social__links {
     margin-bottom: 30px;

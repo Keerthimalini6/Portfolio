@@ -4,6 +4,9 @@ import Link from "next/link";
 import SectionSubtitle from "./SectionSubtitle";
 import classes from "../../styles/contact.module.css";
 import Form from "./Form";
+import { BsGithub } from 'react-icons/bs'
+import { AiOutlineLinkedin } from 'react-icons/ai'
+import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
@@ -11,51 +14,37 @@ const Contact = () => {
       <Container>
         <Row>
           <Col lg="6" md="6">
-            <SectionSubtitle subtitle="Contact me" />
-            <h3 className="mt-4 mb-4">Contact with me</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-              beatae ratione iusto cum. Doloremque suscipit eius provident error
-              labore est reprehenderit, exercitationem corrupti earum deleniti!
-            </p>
+            <h3 className="mt-4 mb-4"> <span style={{ color: "#01edff" }}>Contact</span>  me</h3>
+
 
             <ul className={`${classes.contact__info__list}`}>
               <li className={`${classes.info__item}`}>
                 <span>
                   <i className="ri-map-pin-line"></i>
                 </span>
-                <p>Sylhet - Bangladesh</p>
+                <p>Trichy  -  Tamilnadu</p>
               </li>
               <li className={`${classes.info__item}`}>
                 <span>
                   <i className="ri-mail-line"></i>
                 </span>
-                <p>muhib5532@gmail.com</p>
+                <p>keerthimalini6699@gmail.com</p>
               </li>
               <li className={`${classes.info__item}`}>
                 <span>
                   <i className="ri-phone-line"></i>
                 </span>
-                <p>+088123456789</p>
+                <p>+919688730555</p>
               </li>
             </ul>
 
             <div className={`${classes.social__links}`}>
-              <Link href="#">
-                <i className="ri-youtube-line"></i>
-              </Link>
-              <Link href="#">
-                <i className="ri-github-line"></i>
-              </Link>
-              <Link href="#">
-                <i className="ri-facebook-line"></i>
-              </Link>
-              <Link href="#">
-                <i className="ri-linkedin-line"></i>
-              </Link>
-              <Link href="#">
-                <i className="ri-instagram-line"></i>
-              </Link>
+              <motion.a className={classes.nav__anc} href="https://github.com/Keerthimalini6" target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.2 }} transition={{ type: 'spring', stiffness: 300 }}>
+                <BsGithub className={classes.nav__icon} />
+              </motion.a>
+              <motion.a className={classes.nav__anc} href="https://www.linkedin.com/in/keerthi-malini-698923161/" target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.2 }} transition={{ type: 'spring', stiffness: 300 }}>
+                <AiOutlineLinkedin className={classes.nav__icon} />
+              </motion.a>
             </div>
           </Col>
 
