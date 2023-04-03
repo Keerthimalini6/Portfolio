@@ -75,12 +75,12 @@ footer {
 
 ::-webkit-scrollbar {
   width: 10px;
-  background: #808dad;
+  background: #323744;
 }
 
 ::-webkit-scrollbar-thumb {
   border-radius: 2em;
-  background: #171f38;
+  background: #01edff;
 }
 
 @media only screen and (max-width: 992px) {

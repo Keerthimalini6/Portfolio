@@ -65,8 +65,8 @@ const Portfolio = () => {
 
           {/* Bluemercury */}
           <Col lg="6" md="6">
-            <div style={{ width: "500px", height: "600px" }} className={`${classes.tab__btns}`}>
-              <Image width="420px" height="190px" alt="img" src={bluearr[index]} />
+            <div className={`${classes.tab__btns}`}>
+              <Image className={`${classes.proj__imgs}`} width="420px" height="190px" alt="img" src={bluearr[index]} />
               <h2 style={{ background: "none" }}>Bluemercury</h2>
               <h5 style={{ background: "none" }}>Bluemercury is a leading luxury beauty retailer offering the
                 best cosmetics, skin care, makeup, perfume, hair, and bath and
@@ -100,8 +100,8 @@ const Portfolio = () => {
 
           {/* KFC */}
           <Col lg="6" md="6">
-            <div style={{ width: "500px", height: "600px", background: "linear-gradient(to left,  rgb(50,55,68,0.8), rgba(1, 237, 255, 0.4))" }} className={`${classes.tab__btns}`}>
-              <Image width="420px" height="190px" alt="img" src={KFCarr[index]} />
+            <div style={{ background: "linear-gradient(to left,  rgb(50,55,68,0.8), rgba(1, 237, 255, 0.4))" }} className={`${classes.tab__btns}`}>
+              <Image className={`${classes.proj__imgs}`} width="420px" height="190px" alt="img" src={KFCarr[index]} />
               <h2 style={{ background: "none" }}>KFC</h2>
               <h5 style={{ background: "none" }}>KFC (Kentucky Fried Chicken) is an American fast food
                 restaurant chain headquartered in Louisville, Kentucky, that
