@@ -4,6 +4,10 @@
 
 A clean, beautiful and responsive portfolio.
 
+## Preview
+
+https://keerthimalini.vercel.app/
+
 ## Sections
 ✔️ Summary
 ✔️ About me
