@@ -114,7 +114,7 @@ const Header = () => {
               ))}
 
               <div className={`${classes.nav__right}`}>
-                <Link href="https://drive.google.com/file/d/1luEyKv4UrlDKJZXW4M7Unoq3vTbKfNm_/view?usp=sharing">
+                <Link href="https://drive.google.com/file/d/12KKhnb_j0c38DUWI20Tx8DqNdAJrTsNs/view?usp=sharing">
                   <a target="_blank" className="d-flex align-items-center gap-2 mb-0">
                     Resume
                   </a>

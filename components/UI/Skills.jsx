@@ -3,17 +3,11 @@ import { Container, Row, Col } from "reactstrap";
 import SectionSubtitle from "./SectionSubtitle";
 import classes from "../../styles/services.module.css";
 import { AiOutlineHtml5 } from "react-icons/ai"
-import { DiCss3 } from "react-icons/di"
-import { TbBrandJavascript } from "react-icons/tb"
-import { SiChakraui } from "react-icons/si"
-import { FaReact } from "react-icons/fa"
-import { TbBrandNextjs } from "react-icons/tb"
-import { SiMongodb } from "react-icons/si"
-import { SiExpress } from "react-icons/si"
-import { GrNode } from "react-icons/gr"
-import { ImNpm } from "react-icons/im"
-import { SiRedux } from "react-icons/si"
-import { BsGit } from "react-icons/bs"
+import { DiPostgresql } from "react-icons/di"
+import { DiReact } from "react-icons/di"
+import { SiApachemaven, SiJenkins, SiHarbor, SiSpringboot } from "react-icons/si"
+import { TbBrandDocker, TbBrandJavascript, TbBrandGithub, TbApi } from "react-icons/tb"
+import { BsKanban } from "react-icons/bs"
 import { DiJava } from "react-icons/di"
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
@@ -21,63 +15,61 @@ const Skills = () => {
   const [counter, setCouter] = useState(false)
   return (
     <section id="skills">
-      <h3 style={{ textAlign: "center", marginBottom: "50px" }}>My <span style={{ color: "#01edff" }}>Technical</span> skills</h3>
+      <h2 style={{ textAlign: "center", marginBottom: "50px" }}>My <span style={{ color: "#01edff" }}>Technical</span> skills</h2>
       <Container>
         <Row>
           <Col lg="6" md="6">
             <div className={`${classes.services__container}`}>
               <div className={`${classes.services__container1}`}>
                 <div className={`${classes.service__item}`}>
-                  <AiOutlineHtml5 style={{ fontSize: "1.8rem", color: "#01edff", background: "none" }} />
-                  <h5>HTML</h5>
+                  <DiJava style={{ fontSize: "1.8rem", color: "#01edff", background: "none" }} />
+                  <h5>Java</h5>
                 </div>
                 <div className={`${classes.service__item}`}>
-                  <DiCss3 style={{ fontSize: "1.8rem", color: "#01edff", background: "none" }} />
-                  <h5>CSS</h5>
+                  <SiSpringboot style={{ fontSize: "1.8rem", color: "#01edff", background: "none" }} />
+                  <h5>SpringBoot</h5>
                 </div>
                 <div className={`${classes.service__item}`}>
-                  <TbBrandJavascript style={{ fontSize: "1.8rem", color: "#01edff", background: "none" }} />
-                  <h5>JS</h5>
+                  <TbApi style={{ fontSize: "1.8rem", color: "#01edff", background: "none" }} />
+                  <h5>REST APIs</h5>
                 </div>
                 <div className={`${classes.service__item}`}>
-                  <FaReact style={{ fontSize: "1.8rem", color: "#01edff", background: "none" }} />
+                  <DiPostgresql style={{ fontSize: "1.8rem", color: "#01edff", background: "none" }} />
+                  <h5>PostgreSQL</h5>
+                </div>
+                <div className={`${classes.service__item}`}>
+                  <DiReact style={{ fontSize: "1.8rem", color: "#01edff", background: "none" }} />
                   <h5>React</h5>
                 </div>
                 <div className={`${classes.service__item}`}>
-                  <SiRedux style={{ fontSize: "1.8rem", color: "#01edff", background: "none" }} />
-                  <h5>Redux</h5>
-                </div>
-                <div className={`${classes.service__item}`}>
-                  <DiJava style={{ fontSize: "1.8rem", color: "#01edff", background: "none" }} />
-                  <h5>Java</h5>
+                  <TbBrandJavascript style={{ fontSize: "1.8rem", color: "#01edff", background: "none" }} />
+                  <h5>JavaScript</h5>
                 </div>
               </div>
               <div className={`${classes.services__container2}`}>
                 <div className={`${classes.service__item}`}>
-
-                  <SiMongodb style={{ fontSize: "1.8rem", color: "#01edff", background: "none" }} />
-
-                  <h5>MongoDB</h5>
+                  <TbBrandDocker style={{ fontSize: "1.8rem", color: "#01edff", background: "none" }} />
+                  <h5>Docker</h5>
                 </div>
                 <div className={`${classes.service__item}`}>
-                  <SiExpress style={{ fontSize: "1.8rem", color: "#01edff", background: "none" }} />
-                  <h5>Express</h5>
+                  <SiApachemaven style={{ fontSize: "1.4rem", color: "#01edff", background: "none" }} />
+                  <h5>Maven</h5>
                 </div>
                 <div className={`${classes.service__item}`}>
-                  <GrNode style={{ fontSize: "1.8rem", color: "#01edff", background: "none" }} />
-                  <h5>Node JS</h5>
+                  <TbBrandGithub style={{ fontSize: "1.7rem", color: "#01edff", background: "none" }} />
+                  <h5>GitHubActions</h5>
                 </div>
                 <div className={`${classes.service__item}`}>
-                  <ImNpm style={{ fontSize: "1.8rem", color: "#01edff", background: "none" }} />
-                  <h5>NPM</h5>
+                  <SiJenkins style={{ fontSize: "1.8rem", color: "#01edff", background: "none" }} />
+                  <h5>Jenkins</h5>
                 </div>
                 <div className={`${classes.service__item}`}>
-                  <BsGit style={{ fontSize: "1.8rem", color: "#01edff", background: "none" }} />
-                  <h5>Git</h5>
+                  <SiHarbor style={{ fontSize: "1.8rem", color: "#01edff", background: "none" }} />
+                  <h5>Harbor</h5>
                 </div>
                 <div className={`${classes.service__item}`}>
-                  <SiChakraui style={{ fontSize: "1.4rem", color: "#01edff", background: "none" }} />
-                  <h5>Chakra UI</h5>
+                  <BsKanban style={{ fontSize: "1.8rem", color: "#01edff", background: "none" }} />
+                  <h5>Agile/Scrum</h5>
                 </div>
               </div>
             </div>
@@ -86,24 +78,23 @@ const Skills = () => {
             <div className={`${classes.counter__section}`}>
               <div className="counter" style={{ color: "white", display: "flex", alignItems: "center" }}>
                 <h1 style={{ color: "#01edff" }}>
-                  {counter && <CountUp start={0} end={1200} duration={2} delay={0} />}
+                  {counter && <CountUp start={0} end={5} duration={1} delay={0} />}
                   +
                 </h1>
-                <span style={{ fontSize: "1.2rem" }}>  Hours of Coding</span>
+                <span style={{ fontSize: "1.2rem" }}>  Years Experience</span>
               </div>
               <div className="counter" style={{ color: "white", display: "flex", alignItems: "center" }}>
                 <h1 style={{ color: "#01edff" }}>
-                  {counter && <CountUp start={0} end={1000} duration={2} delay={0} />}
-                  +
+                  1M+
                 </h1>
-                <span style={{ fontSize: "1.2rem" }}>  Hours of DSA</span>
+                <span style={{ fontSize: "1.2rem" }}>  Transactions Processed</span>
               </div>
               <div className="counter" style={{ color: "white", display: "flex", alignItems: "center" }}>
                 <h1 style={{ color: "#01edff" }}>
-                  {counter && <CountUp start={0} end={3} duration={3} delay={0} />}
+                  {counter && <CountUp start={0} end={100} duration={1} delay={0} />}
                   +
                 </h1>
-                <span style={{ fontSize: "1.2rem" }}>  Projects</span>
+                <span style={{ fontSize: "1.2rem" }}>  Concurrent Users Supported</span>
               </div>
             </div>
           </ScrollTrigger>

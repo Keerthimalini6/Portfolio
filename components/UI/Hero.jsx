@@ -72,7 +72,7 @@ const Hero = () => {
                 <span className={`${classes.job__title}`}>
                   <Typewriter
                     options={{
-                      strings: ["  Full Stack Web Developer"],
+                      strings: ["  Full Stack Developer"],
                       autoStart: true,
                       loop: true,
                     }}
@@ -80,10 +80,7 @@ const Hero = () => {
                 </span>
               </motion.h5>
               <p className={`${classes.p_text}`}>
-                A Diligent Full Stack Stack Developer, Developing websites using a variety of tools and
-                technologies, including HTML, CSS, JavaScript, React, Node.js, Express.js, and MongoDB. Eager to
-                embrace opportunities that offer challenge and to build innovative, efficient, and user-
-                friendly web applications that meet the needs of modern businesses.
+                Full Stack Developer with 5 years of experience building enterprise applications using Java, Spring Boot, React, and PostgreSQL. Passionate about creating scalable, secure, and high-performance solutions while collaborating in Agile teams.
               </p>
               <div className={`${classes.nav__right} mt-5`} style={{ display: "flex", gap: '15px' }}>
                 <motion.a className={classes.nav__anc} href="https://github.com/Keerthimalini6" target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.2 }} transition={{ type: 'spring', stiffness: 300 }}>
